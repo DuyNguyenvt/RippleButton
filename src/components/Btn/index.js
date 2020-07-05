@@ -45,7 +45,7 @@ const Ripple = styled.span`
 `;
 
 function Btn(props) {
-  const { bgColor, color, large, small, medium } = props;
+  const { bgColor, color, large, small, medium, text } = props;
   const refRipple = React.createRef();
   const getSize = ({ small, medium, large }) => {
     if (small) {
@@ -84,7 +84,7 @@ function Btn(props) {
         handleClick(event);
       }}
     >
-      BUTTON
+      {text || "BUTTON"}
       <Ripple ref={refRipple} className="btn--ripple" />
     </StyledBtn>
   );

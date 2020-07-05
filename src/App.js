@@ -15,7 +15,7 @@ function App() {
       <header className="App-header">
         <h3>Ripple Button</h3>
         <SampleButtons>
-          <Btn bgColor="#ffbe76" color="white" large />
+          <Btn bgColor="#ffbe76" color="white" large text="test" />
           <Btn bgColor="#6ab04c" color="white" large />
         </SampleButtons>
       </header>
